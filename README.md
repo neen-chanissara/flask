@@ -36,15 +36,3 @@ open -a "Google Chrome"  http://127.0.0.1:5001/
 
 <!-- Quick Start -->
 <!-- If you are not already logged in, you need to authenticate to the Container Registry by using your GitLab username and password. If you have Two-Factor Authentication enabled, use a Personal Access Token instead of a password. -->
-
-
-<!-- You can add an image to this registry with the following commands: -->
-docker build -t flask_api:latest .
-docker login registry.gitlab.com
-docker build -t registry.gitlab.com/thepnatee.p/flask-restfulapi .
-docker push registry.gitlab.com/thepnatee.p/flask-restfulapi
-
-docker stop flask
-docker rm flask
-docker system prune -a
-docker run --name flask -i -d -p 5000:5000 registry.gitlab.com/thepnatee.p/flask-restfulapi
