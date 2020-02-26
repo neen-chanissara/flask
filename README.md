@@ -1,3 +1,8 @@
+# In this project
+
+#Use Flask API with Microsoft SQL in president database.
+
+
 # flask Restful API 
 
 #Flask is a web framework written for Python to be used together with a webserver such as Apache and accepted by leading community we #pages such as Pinterest, LinkedIn etc. Flask is called a micro framework because it doesn't need any tools or libraries. It does not #need a database. However, Flask will still be able to add special extensions if it supports Flask.
