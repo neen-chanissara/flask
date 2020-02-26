@@ -28,10 +28,8 @@ python app.py
 ### step 1 
 docker build -t flask_api:latest .
 ### step 2
-docker run --name flask -i -d -p 5432:5000 flask_api:latest
+docker run --name flask -i -d -p 5000:5000 flask_api:latest
 <!-- docker run --name flask --restart=always -i -d -p 5001:5000 flask_api:latest -->
-### step 3 
-open -a "Google Chrome"  http://127.0.0.1:5001/
 
 
 <!-- Quick Start -->
