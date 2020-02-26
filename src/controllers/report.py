@@ -31,8 +31,6 @@ def sql_1_all():
         }
         return jsonify(response)
 
-
-``
 @report_bp.route("/sql/2/")
 def sql_2_all():
 
@@ -110,7 +108,7 @@ def sql_4_all():
         return jsonify(response)
 
 
-``@report_bp.route("/sql/5/")
+@report_bp.route("/sql/5/")
 def sql_5_all():
 
     data_response = report.select_5()

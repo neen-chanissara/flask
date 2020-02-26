@@ -14,8 +14,6 @@ def create_app():
         key_func=get_remote_address,
 
         # set default limit 
-        # example set
-        # default_limits=["2 per minute", "1 per second"]
         default_limits=["1000 per day", "1 per second"],
     )
     # Binds the application only
@@ -23,10 +21,10 @@ def create_app():
 
         # import file bluprint ex. emp.py
 
-        from .controllers import eport
-
-      
+        from .controllers import report
         app.register_blueprint(report.report_bp, url_prefix="/api/v2/report")
+
+        
     # set route path 
     @app.route('/')
     def index():
